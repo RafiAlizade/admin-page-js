@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project | Admin</title>
+    <link rel="stylesheet" href="./assets/sass/main/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <header class="admin-header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__texts">
+                    <a href="./index.html"><h1 class="header__h1">User Search Panel</h1></a>
+                    <p class="header__par">You have to fill at least 1 line to access any user's information</p>
+                </div>
+
+                <div class="header__search">
+                    <form action="#">
+                        <label for="userName">
+                            <input type="text" placeholder="Name"  class="search_name">
+                        </label>
+    
+                        <label for="userSurname">
+                            <input type="text" placeholder="Username" class="search_surname">
+                        </label>
+    
+                        <label for="userMail">
+                            <input type="text" placeholder="Email" class="search_email">
+                        </label>
+
+                        <button class="search_btn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="users__box">
+                       <span>Loading content...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

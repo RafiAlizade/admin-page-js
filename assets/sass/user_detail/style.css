@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.admin-header {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #7E30E1;
+}
+
+.header__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.4rem;
+}
+
+.header__par {
+  color: #e4e4e4;
+  font-weight: 500;
+}
+
+.header__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+}
+
+.header__h1 {
+  color: #e4e4e4;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.header__search {
+  width: 100%;
+}
+.header__search > form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: normal;
+  gap: 1rem;
+  align-items: center;
+}
+.header__search > form > label {
+  width: 20%;
+  background-color: #F3F8FF;
+}
+.header__search > form > label > input {
+  padding: 0.7rem;
+  width: 100%;
+  background-color: #F3F8FF;
+  border: none;
+  outline: none;
+}
+.header__search > form > button {
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  background-color: #F3F8FF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.user-main {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero__inner {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.user_img {
+  display: flex;
+  justify-content: center;
+}
+
+.user__information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.btn-information {
+  text-align: center;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  width: 70%;
+  background-color: #F3F8FF;
+  border: 1px solid #d8d8d8;
+  outline: none;
+}
+
+.user_delete {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background-color: #f5215a;
+  color: #F3F8FF;
+  cursor: pointer;
+}
+
+.user__buttons {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+}
+
+.user_change {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  background-color: #6C747E;
+  color: #F3F8FF;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

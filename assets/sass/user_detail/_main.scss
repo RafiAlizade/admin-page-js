@@ -1,0 +1,78 @@
+.bold {
+    font-weight: bold;
+}
+
+.user-main {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero__inner {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.user_img {
+    display: flex;
+    justify-content: center;
+}
+
+.user__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.btn-information {
+    text-align: center;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    width: 70%;
+    background-color: #F3F8FF;
+    border: 1px solid #d8d8d8;
+    outline: none;
+}
+
+
+
+.user_delete {
+    border: none;
+    outline: none;
+    padding: .5rem;
+    background-color: #f5215a;
+    color: #F3F8FF;
+    cursor: pointer;
+}
+
+.user__buttons {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+}
+
+.user_change {
+    border: none;
+    outline: none;
+    padding: .5rem;
+    background-color: #6C747E;
+    color: #F3F8FF;
+    cursor: pointer;
+}
