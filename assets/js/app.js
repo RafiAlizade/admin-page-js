@@ -54,7 +54,6 @@ function loadPage(resp) {
 };
 
 
-
 searchBtn.addEventListener('click', function (e) {
     e.preventDefault();
 
@@ -62,11 +61,13 @@ searchBtn.addEventListener('click', function (e) {
     let searchsurnamenamevalue = searchSurname.value.toLowerCase().trim();
     let searchemailvalue = searchEmail.value.toLowerCase().trim();
 
-    const filtiredData = database.filter(user => {
+    const filteredData = database.filter(user => {
         let useredName = user.name.toLowerCase().includes(searchnamevalue);
+        let userInfo = user.username.toLowerCase().includes(searchsurnamenamevalue);
+        let usermail = user.email.toLowerCase().includes(searchemailvalue);
 
-        return useredName
-    })
+        return useredName && userInfo && usermail;
+    });
 
-    loadPage(filtiredData)
+    loadPage(filteredData);
 });
