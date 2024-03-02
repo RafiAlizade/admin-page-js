@@ -2,12 +2,14 @@ const searchBtn = document.querySelector('.search_btn'),
     usersBox = document.querySelector('.users__box'),
     searchName = document.querySelector('.search_name'),
     searchSurname = document.querySelector('.search_surname'),
-    searchEmail = document.querySelector('.search_email');
+    searchEmail = document.querySelector('.search_email'),
+    searchForm = document.querySelector('form');
 
+// document.addEventListener("DOMContentLoaded", (event) => {
+//     loadPage();
+// });
 
-document.addEventListener("DOMContentLoaded", (event) => {
-    loadPage();
-});
+let isLoading = false;
 
 
 let database = [];
@@ -15,59 +17,84 @@ let database = [];
 async function fetchData() {
     let dataFetch = await fetch('http://localhost:3000/users');
     let response = await dataFetch.json();
+    database = response;
 
     return response;
 }
 
-fetchData().then(users => {
-    loadPage(users);
-    database = users;
-})
+async function createData(userData) {
+    let createAPI = await fetch('http://localhost:3000/users', {
+        method: 'POST', body: JSON.stringify(userData), headers:{
+            'Content-type' : 'Application/json; charset=UTF-8'
+        }
+    });
+    let createResponse = await createAPI.json();
 
-function loadPage(resp) {
-    usersBox.innerHTML = '';
+    return createResponse;
+}
 
-    resp.forEach(allUsers => {
-        const HTML = `
-        <a href="./user_detail.html?name=${allUsers.id}" class="user__href">
-        <div class="user__container">
-            <div class="user__img">
-                <img src="./assets/images/icon-256x256.png" style="width: 128px; height: 128px;" alt="">
-            </div>
+function createCard(user) {
+    const cardCode = `
+    <a href="./user_detail.html?id=${user.id}" class="user__href">
+    <div class="user__container">
+        <div class="user__img">
+            <img src="./assets/images/icon-256x256.png" style="width: 128px; height: 128px;" alt="">
+        </div>
 
-            <div class="user__information">
-                <span class="user__id"><span class="bold">User ID</span> : ${allUsers.id}</span>
-                <span class="user__name"><span class="bold">Name :</span> ${allUsers.name}</span>
-                <span class="user__surname"><span class="bold">Username :</span> ${allUsers.username}</span>
-                <span class="user__mail"><span class="bold">Email :</span> ${allUsers.email}</span>
-                <div class="user__buttons">
-                    <button class="user_delete"><i class="bi bi-trash3"></i></button>
-                    <button class="user_change"><i class="bi bi-pencil-square"></i></button>
-                </div>
+        <div class="user__information">
+            <span class="user__id"><span class="bold">User ID</span> : ${user.id}</span>
+            <span class="user__name"><span class="bold">Name :</span> ${user.name}</span>
+            <span class="user__surname"><span class="bold">Username :</span> ${user.username}</span>
+            <span class="user__mail"><span class="bold">Email :</span> ${user.email}</span>
+            <div class="user__buttons">
+                <button class="user_delete"><i class="bi bi-trash3"></i></button>
+                <button class="user_change"><i class="bi bi-pencil-square"></i></button>
             </div>
         </div>
-    </a>
-            `
+    </div>
+</a>
+    `
 
-        usersBox.innerHTML += HTML
-    })
-};
+    return cardCode
+}
+
+async function showUsers() {
+    isLoading = true;
+
+    if (isLoading) {
+        usersBox.querySelector('span').textContent = 'Loading content...';
+    } 
 
 
-searchBtn.addEventListener('click', function (e) {
+    let usersArray = await fetchData();
+
+    if (usersArray) {
+        isLoading = false;
+        usersBox.innerHTML = '';
+        usersArray.forEach(user => {
+            usersBox.insertAdjacentHTML('beforeend', createCard(user))
+        })
+    }
+}
+
+showUsers();
+
+//  ! DELETE DATA / UPDATE DATA
+
+searchForm.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    let searchnamevalue = searchName.value.toLowerCase().trim();
-    let searchsurnamenamevalue = searchSurname.value.toLowerCase().trim();
-    let searchemailvalue = searchEmail.value.toLowerCase().trim();
+    let searchnamevalue = searchName.value.trim();
+    let searchsurnamenamevalue = searchSurname.value.trim();
+    let searchemailvalue = searchEmail.value.trim();
 
-    const filteredData = database.filter(user => {
-        let useredName = user.name.toLowerCase().includes(searchnamevalue);
-        let userInfo = user.username.toLowerCase().includes(searchsurnamenamevalue);
-        let usermail = user.email.toLowerCase().includes(searchemailvalue);
+    if (!searchnamevalue || !searchsurnamenamevalue || !searchemailvalue) return
 
-        return useredName && userInfo && usermail;
-    });
+    let userInformations = {
+        'name' : `${searchnamevalue}`,
+        'username' : `${searchsurnamenamevalue}`,
+        'email' : `${searchemailvalue}`
+    }
 
-    loadPage(filteredData);
-});
+    await createData(userInformations);
+})

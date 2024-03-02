@@ -2,6 +2,10 @@
     font-weight: bold;
 }
 
+.d-none {
+    display: none;
+}
+
 .user-main {
     width: 100%;
 }
@@ -61,6 +65,26 @@
     cursor: pointer;
 }
 
+.user_confirm {
+    border: none;
+    outline: none;
+    padding: .5rem;
+    background-color: #1BA345;
+    color: #F3F8FF;
+    cursor: pointer;
+}
+
+
+.user_cancel {
+    border: none;
+    outline: none;
+    padding: .5rem;
+    background-color: #f5215a;
+    color: #F3F8FF;
+    cursor: pointer;
+}
+
+
 .user__buttons {
     margin-top: .5rem;
     display: flex;
@@ -75,4 +99,15 @@
     background-color: #6C747E;
     color: #F3F8FF;
     cursor: pointer;
+}
+
+.user__id {
+    cursor: not-allowed;
+}
+
+.user__information  input {
+    background-color: #F3F8FF;
+    border: 1px solid #999999;
+    outline: none;
+    padding: 0.1rem 0.3rem;
 }
