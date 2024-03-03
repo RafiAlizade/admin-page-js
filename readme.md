@@ -22,3 +22,7 @@ The next update is planned to include several enhancements to improve user manag
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+## Interface
+
+![admin-panel](https://github.com/RafiAlizade/admin-page-js/assets/33255629/73b922cf-459a-467b-bff3-6288a109c44a)
