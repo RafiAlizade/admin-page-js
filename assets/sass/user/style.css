@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style-type: none;
 }
 
 body {
   font-size: 16px;
-  font-family: "Lato", sans-serif;
-  transition: ease-in-out 2s;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container {
@@ -19,9 +20,9 @@ body {
 
 .admin-header {
   width: 100%;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  background-color: #7E30E1;
+  padding-top: 1.55rem;
+  padding-bottom: 1.55rem;
+  background-color: rgb(224, 41, 59);
 }
 
 .header__texts {
@@ -44,44 +45,22 @@ body {
   gap: 3rem;
 }
 
-.header__h1 {
-  color: #e4e4e4;
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-.header__search {
-  width: 100%;
-}
-.header__search > form {
-  width: 100%;
+.header__ul {
   display: flex;
   flex-direction: row;
-  justify-content: normal;
-  gap: 1rem;
-  align-items: center;
+  gap: 1.75rem;
 }
-.header__search > form > label {
-  width: 20%;
-  background-color: #F3F8FF;
+
+.href_color {
+  font-size: 0.8rem;
+  color: #fff;
 }
-.header__search > form > label > input {
-  padding: 0.7rem;
-  width: 100%;
-  background-color: #F3F8FF;
-  border: none;
-  outline: none;
+.href_color:hover {
+  color: rgb(194, 194, 194);
 }
-.header__search > form > button {
-  padding: 0.7rem 2rem 0.7rem 2rem;
-  background-color: #F3F8FF;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.header__search > form > button:hover {
-  background-color: #dfdfdf;
-  transition: ease-in 0.1s;
+
+.selected-text {
+  color: rgb(194, 194, 194);
 }
 
 .bold {

@@ -1,0 +1,134 @@
+.bold {
+    font-weight: bold;
+}
+
+.admin-main {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    animation: loading;
+    animation-duration: 1.2s;
+}
+
+.hero__inner {
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.info_msg {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.7rem;
+    width: 100%;
+}
+
+.info_warning {
+    background-color: rgb(248, 74, 91);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: #f0f0f0;
+    font-weight: 350;
+
+    >p a {
+        color: #dddddd;
+        text-decoration: underline;
+}
+}
+
+.info_succes {
+    background-color: rgb(11, 83, 27);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: #f0f0f0;
+    font-weight: 350;
+
+    >p a {
+        color: #dddddd;
+        text-decoration: underline;
+}
+}
+
+.user_add_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+    > label {
+        width: 70%;
+        background-color: #F3F8FF;
+        border: 1px solid #bebebe;
+        border-radius: .3rem;
+
+        > input {
+            width: 100%;
+            text-align: center;
+            padding: .7rem .7rem;
+            background-color: #F3F8FF;
+            border: none;
+            border-radius: .3rem;
+            outline: none;
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.user_add {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 70%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 1rem;
+}
+
+.search_btn {
+    background-color: rgb(224, 41, 59);
+    width: 70%;
+    padding: .7rem;
+    border: none;
+    outline: none;
+    color: #f0f0f0;
+    font-family: "Lato", sans-serif;
+}
+
+.user_add_h2 {
+    color: rgb(224, 41, 59);
+}
+
+
+.d-none {
+    display: none;
+}

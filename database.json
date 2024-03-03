@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": "z14x",
+      "name": "Alimdar",
+      "username": "Musayev",
+      "email": "alimdarmusayev@gmail.com",
+      "address": {
+        "street": "Baku City, Azadlıq 4A B3",
+        "suite": "Daxil ediməyib",
+        "city": "Baku",
+        "zipcode": "0021"
+      },
+      "phone": "+994552972145",
+      "company": {
+        "name": "Quadruple Develop LLC"
+      }
+    },
+    {
+      "id": "7edf",
+      "name": "Əli",
+      "username": "Mehdiyev",
+      "email": "əlimehdiyev@gmail.com",
+      "address": {
+        "street": "Salam",
+        "suite": "qwekqwjk",
+        "city": "ewqkjkqjwekj",
+        "zipcode": "wqejkqjwejk"
+      },
+      "phone": "+994235715",
+      "company": {
+        "name": "wqejwqekj"
+      }
+    },
+    {
+      "id": "8df7",
+      "name": "Rasim",
+      "username": "Rasulov",
+      "email": "rasimrasulov@gmail.com",
+      "address": {
+        "street": "Zarifa Aliyeva 12",
+        "suite": "Apt 34",
+        "city": "Baku",
+        "zipcode": "AZ1000"
+      },
+      "phone": "+994502345678",
+      "company": {
+        "name": "Innovatech LLC"
+      }
+    },
+    {
+      "id": "9cx6",
+      "name": "Leyla",
+      "username": "Huseynova",
+      "email": "leylahuseynova@gmail.com",
+      "address": {
+        "street": "Nizami 77",
+        "suite": "Apt 56",
+        "city": "Baku",
+        "zipcode": "AZ1100"
+      },
+      "phone": "+994553456789",
+      "company": {
+        "name": "TechSolutions Ltd"
+      }
+    },
+    {
+      "id": "7xc6",
+      "name": "Murad",
+      "username": "Aliyev",
+      "email": "muradaliyev@gmail.com",
+      "address": {
+        "street": "Tbilisi Ave 49",
+        "suite": "Apt 24",
+        "city": "Baku",
+        "zipcode": "AZ1122"
+      },
+      "phone": "+994504567890",
+      "company": {
+        "name": "CreativeWorks LLC"
+      }
+    },
+    {
+      "id": "2zq5",
+      "name": "Zeynab",
+      "username": "Mammadova",
+      "email": "zeynabmammadova@gmail.com",
+      "address": {
+        "street": "8 November Ave 5",
+        "suite": "Apt 78",
+        "city": "Baku",
+        "zipcode": "AZ1025"
+      },
+      "phone": "+994556789012",
+      "company": {
+        "name": "GreenTech Innovations Ltd"
+      }
+    },
+    {
+      "id": "9811",
+      "name": "Yaşar",
+      "username": "Əzizov",
+      "email": "yasharazizov@gmail.com",
+      "address": {
+        "street": "Daxil Edilməyib",
+        "suite": "Daxil ediməyib",
+        "city": "Daxil edilməyib",
+        "zipcode": "Daxil edilməyib"
+      },
+      "phone": "+99455271451",
+      "company": {
+        "name": "Daxil edilməyib"
+      }
+    }
+  ]
+}
