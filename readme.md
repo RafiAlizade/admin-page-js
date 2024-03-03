@@ -23,6 +23,10 @@ The next update is planned to include several enhancements to improve user manag
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+## Notifications 
+
+- Due to user and project confidentiality, database.json file has been removed from the files section.
+
 ## Interface
 
 ![admin-panel](https://github.com/RafiAlizade/admin-page-js/assets/33255629/73b922cf-459a-467b-bff3-6288a109c44a)
