@@ -18,6 +18,7 @@ The next update is planned to include several enhancements to improve user manag
 - **User Photo Editing**: Ability to add or edit user photos.
 - **Confirmation Dialog for User Deletion**: A confirmation screen will be added to prevent accidental deletions.
 - **Input Field Enhancements**: Improvements to input fields for a more intuitive user experience.
+- **Improved appearance**: Simpler use with further improved interface.
 
 ## Getting Started
 
